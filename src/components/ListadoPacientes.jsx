@@ -3,12 +3,7 @@ import { Paciente } from './Paciente'
 
 export const ListadoPacientes = ({ Pacientes, setEdicion, Eliminar }) => {
 
-  useEffect(() => {
-    if (Pacientes.length > 0) {
-      console.log('Nuevo paciente')
-    }
 
-  }, [Pacientes])
 
   return (
     <div className="md:w-1/2 lg:w-3/5 md:h-screen overflow-y-scroll">
