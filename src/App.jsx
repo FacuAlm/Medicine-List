@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Header } from "./components/Header";
 import { Farmacia } from "./components/Farmacia";
 import { Bioquimicos } from "./components/Bioquimicos";
@@ -7,26 +7,21 @@ import { Bioquimicos } from "./components/Bioquimicos";
 
 function App() {
   return (
-   
-<Router>
-  <div className="container mx-auto">
-<Header/>
 
-  <Routes>
+    <Router>
+      <div className="container mx-auto">
+        <Header />
 
-    <Route path="/" element={<Bioquimicos/>}>
-    </Route>
+        <Routes>
 
-    <Route path="/farmacia" element={<Farmacia/>}>
-    </Route>
-      
-      
-  
-    
+          <Route path="/" element={<Bioquimicos />}>
+          </Route>
 
-  </Routes>
-  </div>
-</Router>
+          <Route path="/farmacia" element={<Farmacia />}>
+          </Route>
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react'
 import { Paciente } from './Paciente'
 
-export const ListadoPacientes = ({ Pacientes, setEdicion, Eliminar}) => {
+export const ListadoPacientes = ({ Pacientes, setEdicion, Eliminar }) => {
 
-  useEffect(()=>{
-    if (Pacientes.length>0) {
+  useEffect(() => {
+    if (Pacientes.length > 0) {
       console.log('Nuevo paciente')
     }
-    
+
   }, [Pacientes])
 
   return (
@@ -27,8 +27,8 @@ export const ListadoPacientes = ({ Pacientes, setEdicion, Eliminar}) => {
                   paciente={paciente}
                   setEdicion={setEdicion}
                   Eliminar={Eliminar}
-                  
-                  
+
+
                 />
 
               )

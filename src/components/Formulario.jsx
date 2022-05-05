@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react"
 
-export const Formulario = ({ Pacientes, setPacientes, Edicion,setEdicion }) => {
+export const Formulario = ({ Pacientes, setPacientes, Edicion, setEdicion }) => {
 
   const [Cliente, setCliente] = useState('')
   const [Propietario, setPropietario] = useState('')
   const [Email, setEmail] = useState('')
-  
-  
+
+
   const [error, setError] = useState(false)
 
   useEffect(() => {
@@ -14,8 +14,8 @@ export const Formulario = ({ Pacientes, setPacientes, Edicion,setEdicion }) => {
       setCliente(Edicion.Cliente)
       setPropietario(Edicion.Propietario)
       setEmail(Edicion.Email)
-      
-      
+
+
     }
   }, [Edicion])
 
@@ -29,7 +29,7 @@ export const Formulario = ({ Pacientes, setPacientes, Edicion,setEdicion }) => {
   const handleSubmit = (e) => {
 
 
-    if ([Cliente, Propietario, Email ].includes('')) {
+    if ([Cliente, Propietario, Email].includes('')) {
       setError(true)
     }
     else {
@@ -41,7 +41,7 @@ export const Formulario = ({ Pacientes, setPacientes, Edicion,setEdicion }) => {
         Cliente,
         Propietario,
         Email,
-        
+
 
       }
 
@@ -65,7 +65,7 @@ export const Formulario = ({ Pacientes, setPacientes, Edicion,setEdicion }) => {
       setPropietario('')
       setEmail('')
       setAlta('')
-      
+
     }
   }
 
@@ -123,9 +123,9 @@ export const Formulario = ({ Pacientes, setPacientes, Edicion,setEdicion }) => {
           />
         </div>
 
-       
 
-      
+
+
 
         {error && <p className="text-red-600 normal-case">*Faltan llenar campos</p>}
 

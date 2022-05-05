@@ -8,7 +8,7 @@ export const Bioquimicos = () => {
   const INITIAL = JSON.parse(localStorage.getItem("Pacientes")) ?? [];
   const [Pacientes, setPacientes] = useState(INITIAL);
   const [Edicion, setEdicion] = useState({});
-  
+
   useEffect(() => {
     localStorage.setItem("Pacientes", JSON.stringify(Pacientes));
   }, [Pacientes]);
@@ -25,20 +25,20 @@ export const Bioquimicos = () => {
 
   return (
 
-      <div className="mx-3 mt-12 md:flex">
-        <Formulario
-          setPacientes={setPacientes}
-          Pacientes={Pacientes}
-          Edicion={Edicion}
-          setEdicion={setEdicion}
-        />
-        <ListadoPacientes
-          Pacientes={Pacientes}
-          setEdicion={setEdicion}
-          Eliminar={Eliminar}
-        />
-        
-      </div>
-    
+    <div className="mx-3 mt-12 md:flex">
+      <Formulario
+        setPacientes={setPacientes}
+        Pacientes={Pacientes}
+        Edicion={Edicion}
+        setEdicion={setEdicion}
+      />
+      <ListadoPacientes
+        Pacientes={Pacientes}
+        setEdicion={setEdicion}
+        Eliminar={Eliminar}
+      />
+
+    </div>
+
   );
 }
