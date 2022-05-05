@@ -15,8 +15,8 @@ export const Header = () => {
      to='/'>Personal de Laboratorio
      </Link>
        <Link  
-       className={`${urlActual === '/Farmacia'? 'text-orange-600' : 'text-indigo-700'} font-bold text-indigo-700 mx-5 my-3 hover:text-orange-600 `} 
-       to='/Farmacia'>Farmacia
+       className={`${urlActual === '/farmacia'? 'text-orange-600' : 'text-indigo-700'} font-bold text-indigo-700 mx-5 my-3 hover:text-orange-600 `} 
+       to='/farmacia'>Farmacia
        </Link>
 
 

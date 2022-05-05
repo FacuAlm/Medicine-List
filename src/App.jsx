@@ -17,7 +17,7 @@ function App() {
     <Route path="/" element={<Bioquimicos/>}>
     </Route>
 
-    <Route path="/Farmacia" element={<Farmacia/>}>
+    <Route path="/farmacia" element={<Farmacia/>}>
     </Route>
       
       
