@@ -84,7 +84,7 @@ export const Formulario = ({ Pacientes, setPacientes, Edicion,setEdicion }) => {
           <label htmlFor='mascota' className="font-bold text-indigo-600">Matrícula</label>
           <input
             required
-            autocomplete="off"
+            autoComplete="off"
             id='mascota'
             type="number"
             placeholder='Nro. Matricula'
@@ -99,7 +99,7 @@ export const Formulario = ({ Pacientes, setPacientes, Edicion,setEdicion }) => {
           <label htmlFor='propietario' className="font-bold text-indigo-600">Nombre Médico</label>
           <input
             required
-            autocomplete="off"
+            autoComplete="off"
             id='propietario'
             type="text"
             placeholder='Nombre Medico'
@@ -113,7 +113,7 @@ export const Formulario = ({ Pacientes, setPacientes, Edicion,setEdicion }) => {
           <label htmlFor='email' className="font-bold text-indigo-600 ">Nombre Medicamento</label>
           <input
             required
-            autocomplete="off"
+            autoComplete="off"
             id='email'
             type="text"
             placeholder='Medicamento'
