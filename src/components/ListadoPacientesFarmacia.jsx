@@ -34,7 +34,7 @@ export const ListadoPacientesFarmacia = ({ Pacientes, setEdicion, Eliminar }) =>
 
       ) : (
         <>
-          <h2 className="font-black text-3xl text-center mt-5 mb-5">No hay Pacientes</h2>
+          <h2 className="font-black text-3xl text-center mt-5 mb-5">No hay Ordenes</h2>
 
           <p className="font-black">Cuando el personal de Laboratorio agregue una orden, {' '} <span className="text-indigo-600">aparecerá aquí</span></p>
         </>

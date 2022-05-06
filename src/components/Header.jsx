@@ -5,7 +5,7 @@ export const Header = () => {
 
   const location = useLocation()
 
-  const urlActual = location.pathname
+  
   return (
     <>
       <h1 className="font-black text-5xl text-center md:w-2/3 mx-auto">Medicine <span className="text-indigo-600"> List Web</span></h1>
